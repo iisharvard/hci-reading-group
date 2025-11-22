@@ -10,20 +10,9 @@ author:
   name: Ritesh Kanchi
   email: rkanchi@g.harvard.edu
 
-semester: Winter 2026
-
 meeting:
   day: Wednesday
   time: 10am
-
-# collections:
-#   semesters:
-# defaults:
-#   - scope:
-#       path: ""
-#       type: semesters
-#     values:
-#       layout: semester
 
 permalink: pretty
 
