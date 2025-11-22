@@ -171,7 +171,7 @@ h6 {
 
 hr {
   border: none;
-  border-top: $border-width $border-style rgba($color-grey, 0.5);
+  border-top: $border-width $border-style rgba($color-grey, 0.25);
   margin-top: calc($spacing) * 8;
   margin-bottom: calc($spacing) * 8;
 }
@@ -187,7 +187,7 @@ h2 {
   margin: 0;
 
   .schedule-item {
-    border-bottom: $border-width $border-style rgba($color-grey, 0.25);
+    border-bottom: $border-width $border-style rgba($color-grey, 0.1);
     padding-top: calc($spacing) * 6;
     padding-bottom: calc($spacing) * 6;
 
@@ -215,7 +215,7 @@ h2 {
       padding-inline: calc($spacing) * 2;
       padding-top: calc($spacing) * 1;
       padding-bottom: calc($spacing) * 1;
-      border: 1px solid rgba($color-grey, 0.5);
+      border: 1px solid rgba($color-grey, 0.25);
       background-color: $color-white;
       border-radius: $rounded-full;
       display: inline-block;
@@ -292,5 +292,20 @@ h2 {
       color: $color-crimson;
       text-decoration: underline;
     }
+  }
+}
+
+footer {
+  border-top: $border-width $border-style rgba(0, 0, 0, 0.1);
+  padding-top: calc($spacing) * 4;
+  padding-bottom: calc($spacing) * 4;
+  text-align: center;
+  font-size: $text-sm;
+  line-height: $leading, $text-sm--line-height;
+  color: $color-grey;
+
+  a {
+    color: $color-crimson;
+    text-decoration: underline;
   }
 }
