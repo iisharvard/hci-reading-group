@@ -1,11 +1,10 @@
 // Colors
 $color-black: #000;
-$color-white: #fff;
-$color-grey: #71717b;
+$color-white: #ffffff;
+$color-grey: #52525c;
 
 $color-crimson: #a51c30;
 $color-red: #ed1b34;
-$color-salmon: #ec8f9c;
 
 // Fonts
 
@@ -188,7 +187,7 @@ h2 {
   margin: 0;
 
   .schedule-item {
-    border-bottom: $border-width $border-style rgba($color-grey, 0.5);
+    border-bottom: $border-width $border-style rgba($color-grey, 0.25);
     padding-top: calc($spacing) * 6;
     padding-bottom: calc($spacing) * 6;
 
@@ -229,6 +228,17 @@ h2 {
       font-size: $text-xl;
       max-width: $container-3xl;
     }
+
+    h4 {
+      text-transform: uppercase;
+      font-family: $font-text;
+      font-weight: $font-weight-semibold;
+      font-size: $text-sm;
+      margin-top: calc($spacing) * 6;
+      margin-bottom: calc($spacing) * 2;
+      letter-spacing: 0.05em;
+    }
+
     .schedule-readings {
       // list-style: none;
       padding-inline-start: calc($spacing) * 4;
@@ -263,6 +273,24 @@ h2 {
       margin-top: calc($spacing) * 4;
       margin-bottom: calc($spacing) * 4;
       line-height: $leading, $text-sm--line-height;
+    }
+  }
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: calc($spacing) * 4;
+
+    a {
+      font-size: $text-lg;
+      line-height: $leading, $text-lg--line-height;
+      font-weight: $font-weight-medium;
+      color: $color-crimson;
+      text-decoration: underline;
     }
   }
 }

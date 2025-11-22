@@ -10,7 +10,8 @@ layout: base
       {% assign sessions = page.sessions | sort: "date" %} {% for item in
       sessions %} {% include schedule_item.html item=item %} {% endfor %}
     </ul>
+
+    <h2>All Terms</h2>
+    {% include all_terms.html %}
   </div>
 </main>
-
-<h1></h1>

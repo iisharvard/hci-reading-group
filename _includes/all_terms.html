@@ -1,0 +1,11 @@
+<ul class="terms-list">
+  {% for term in site.data.schedule %} {% assign sessions = term[1] %}
+
+  <li>
+    <a href="{{ site.baseurl }}/schedule/{{term[0]}}"
+      >{{ term[0] | replace: '-', ' ' | capitalize }}</a
+    >
+  </li>
+
+  {% endfor %}
+</ul>

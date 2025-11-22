@@ -25,11 +25,4 @@ Coming soon...
 
 ## Past Terms
 
-{% for term in site.data.schedule %}
-
-{% assign sessions = term[1] %}
-{% if term[0] != site.current_term %}
-
-- [{{ term[0] | replace: '-', ' ' | capitalize }}]({{ site.baseurl }}/schedule/{{ term[0 ]}})
-  {% endif %}
-  {% endfor %}
+{% include all_terms.html %}
