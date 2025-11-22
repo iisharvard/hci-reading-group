@@ -1,0 +1,60 @@
+- date: 2024-06-12
+  person: Zilin
+  title: AI and the Placebo Effect
+  readings:
+    - title: '"AI enhances our performance, I have no doubt this one will do the same": The Placebo Effect Is Robust to Negative Descriptions of AI'
+      url: https://arxiv.org/pdf/2309.16606v2
+- date: 2024-04-18
+  person: Zana
+  title: Designing Decision Support Interfaces to Investigate the Complexities of Workplace Social Decision-Making With Line Managers
+  readings:
+    - title: "DISCERN: Designing Decision Support Interfaces to Investigate the Complexities of Workplace Social Decision-Making With Line Managers"
+      url: https://arxiv.org/pdf/2402.19318.pdf
+- date: 2024-04-11
+  person: Jianna
+  title: Contestable Camera Cars
+  readings:
+    - title: "Contestable Camera Cars: A Speculative Design Exploration of Public AI That Is Open and Responsive to Dispute"
+      url: https://dl.acm.org/doi/fullHtml/10.1145/3544548.3580984
+- date: 2024-04-02
+  person: Sohini
+  title: The Future of HCI-Policy Collaboration
+  readings:
+    - title: "The Future of HCI-Policy Collaboration"
+      url: https://www.researchgate.net/publication/378410582_The_Future_of_HCI-Policy_Collaboration
+- date: 2024-03-28
+  person: Zilin
+  title: "Rehearsal: Simulating Conflict to Teach Conflict Resolution"
+  readings:
+    - title: "Rehearsal: Simulating Conflict to Teach Conflict Resolution"
+      url: https://arxiv.org/abs/2309.12309
+- date: 2024-03-07
+  person: Yiyang
+  title: AI Art and its Impact on Artists
+  readings:
+    - title: "AI Art and its Impact on Artists"
+      url: https://dl.acm.org/doi/10.1145/3600211.3604681
+- date: 2024-02-22
+  person: Lucia
+  title: "GitHub Copilot AI pair programmer: Asset or Liability?"
+  readings:
+    - title: "GitHub Copilot AI pair programmer: Asset or Liability?"
+      url: https://arxiv.org/abs/2206.15331
+- date: 2024-02-15
+  person: Zilin
+  title: "Reconstituting the Utopian Vision of Making: HCI After Technosolutionism"
+  readings:
+    - title: "Reconstituting the Utopian Vision of Making: HCI After Technosolutionism"
+      url: https://dl.acm.org/doi/10.1145/2858036.2858506
+- date: 2024-02-08
+  person: Elena
+  title: "Iceberg Sensemaking: A Process Model for Critical Data Analysis"
+  readings:
+    - title: "Iceberg Sensemaking: A Process Model for Critical Data Analysis"
+      url: https://arxiv.org/pdf/2204.04758.pdf
+- date: 2024-02-01
+  person: Zana
+  title: Can we have pro-worker AI?
+  readings:
+    - title: "Can we have pro-worker AI? Choosing a path of machines in service of minds"
+      url: https://cepr.org/system/files/publication-files/191183-policy

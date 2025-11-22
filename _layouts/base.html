@@ -9,5 +9,7 @@
   <body>
     {{content}} {%- include footer.html -%}
   </body>
+  {% if page.layout == "home" %}
   <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+  {% endif %}
 </html>
