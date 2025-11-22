@@ -1,0 +1,91 @@
+- date: 2025-04-22
+  person: Katy
+  title: "Building Machines that Learn and Think with People."
+  readings:
+    - title: "Building Machines that Learn and Think with People"
+      url: http://arxiv.org/abs/2408.03943
+
+- date: 2025-04-15
+  person: Jianna
+  title: "Affect: From Information to Interaction"
+  readings:
+    - title: "Affect: From Information to Interaction"
+      url: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4a6391cd826a859086fd58fd4850c2ef57d42fc5
+
+- date: 2025-04-08
+  person: Zana
+  title: A Decision Theoretic Framework for Measuring AI Reliance
+  readings:
+    - title: "A Decision Theoretic Framework for Measuring AI Reliance"
+      url: https://dl.acm.org/doi/pdf/10.1145/3630106.3658901
+
+- date: 2025-04-01
+  person: Sohini
+  title: "Slip Through the Chat: Subtle Injection of False Information in LLM Chatbot Conversations Increases False Memory Formation"
+  readings:
+    - title: "Slip Through the Chat: Subtle Injection of False Information in LLM Chatbot Conversations Increases False Memory Formation"
+      url: https://dl.acm.org/doi/10.1145/3708359.3712112
+
+- date: 2025-03-25
+  person: Lena
+  title: Community-Engaged HCI Research
+  readings:
+    - title: "“I never realized sidewalks were a big deal”: A Case Study of a Community-Driven Sidewalk Accessibility Assessment using Project Sidewalk"
+      url: https://dl.acm.org/doi/10.1145/3613904.3642003
+    - title: "Everyday Algorithm Auditing: Understanding the Power of Everyday Users in Surfacing Harmful Algorithmic Behaviors"
+      url: https://arxiv.org/abs/2105.02980
+      optional: true
+    - title: "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability"
+      url: https://arxiv.org/abs/2406.01399
+      optional: true
+
+- date: 2025-03-11
+  person: Katy
+  title: The Work of Art in the Age of Mechanical Reproduction
+  readings:
+    - title: "The Work of Art in the Age of Mechanical Reproduction"
+      url: https://web.mit.edu/allanmc/www/benjamin.pdf
+
+- date: 2025-03-04
+  person: Usha
+  title: Gender and Political Biases of Language Models
+  readings:
+    - title: "Measuring Implicit Bias in Explicitly Unbiased Large Language Models"
+      url: https://arxiv.org/pdf/2402.04105
+    - title: "Whose Opinions Do Language Models Reflect?"
+      url: https://proceedings.mlr.press/v202/santurkar23a/santurkar23a.pdf
+    - title: "ChatGPT Doesn’t Trust Chargers Fans: Guardrail Sensitivity in Context"
+      url: https://arxiv.org/pdf/2407.06866
+      optional: true
+    - title: "The political ideology of conversational AI: Converging evidence on ChatGPT’s pro-environmental, left-libertarian orientation"
+      url: https://arxiv.org/abs/2301.01768
+      optional: true
+- date: 2025-02-25
+  person: Tyler
+  title: Copyright and Artificial Intelligence
+  readings:
+    - title: "Copyright and Artificial Intelligence"
+      url: https://www.copyright.gov/policy/artificial-intelligence/executive-summary.pdf
+  note: Tyler will lead discussion on AI + copyright based on the report's executive summary.
+
+- date: 2025-02-11
+  person: Hongjin
+  title: Post-Growth HCI
+  readings:
+    - title: "Post-growth HCI: Researching Human-Computer Interaction for Economic Degrowth"
+      url: https://dl.acm.org/doi/10.1145/3624981
+  note: "Hongjin recommends reading the whole paper, but if you don’t have enough time for the whole paper, please read the intro (and ideally through section 3: Page 1 - 12)."
+
+- date: 2025-02-02
+  person: Jianna
+  title: Deepseek and AI Regulation
+  readings:
+    - title: "Deepseek R1"
+      url: https://arxiv.org/pdf/2501.12948
+    - title: "Why DeepSeek Could Change What Silicon Valley Believes About A.I."
+      url: https://www.removepaywall.com/search?url=https://www.nytimes.com/2025/01/28/technology/china-deepseek-ai-silicon-valley.html
+      optional: true
+    - title: "Silicon Valley's New Red Scare"
+      url: https://www.removepaywall.com/search?url=https://www.businessinsider.com/chinese-spies-silicon-valley-tech-companies-freaking-out-espionage-employees-2025-1
+      optional: true
+  note: I also encourage you to check out some of R1's output, either through playing with it yourself or checking out writers' posts online

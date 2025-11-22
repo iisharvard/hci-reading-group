@@ -1,0 +1,330 @@
+// Colors
+$color-black: #000;
+$color-white: #ffffff;
+$color-grey: #52525c;
+
+$color-crimson: #a51c30;
+$color-red: #ed1b34;
+
+$color-yellow: #ffde2d;
+$color-warm-yellow: #fcb315;
+
+// Fonts
+
+$font-text: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+$font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, -apple-system,
+  BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Typography
+$text-sm: 0.875rem;
+$text-sm--line-height: calc(1.25 / 0.875);
+$text-lg: 1.125rem;
+$text-lg--line-height: calc(1.75 / 1.125);
+$text-xl: 1.25rem;
+$text-xl--line-height: calc(1.75 / 1.25);
+$text-2xl: 1.5rem;
+$text-2xl--line-height: calc(2 / 1.5);
+$text-3xl: 1.875rem;
+$text-3xl--line-height: calc(2.25 / 1.875);
+$text-4xl: 2.25rem;
+$text-4xl--line-height: calc(2.5 / 2.25);
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+// Sizing
+$spacing: 0.25rem;
+$leading: 1.5;
+$leading-tight: 1.25;
+
+$space-y-reverse: 0;
+
+$radius-lg: 0.5rem;
+
+// Container widths
+$container-xs: 20rem;
+$container-sm: 24rem;
+$container-md: 28rem;
+$container-lg: 32rem;
+$container-xl: 36rem;
+$container-2xl: 42rem;
+$container-3xl: 48rem;
+$container-4xl: 56rem;
+$container-5xl: 64rem;
+$container-6xl: 72rem;
+
+// Breakpoints
+$breakpoint-sm: 30rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+$breakpoint-xl: 80rem;
+
+// Other
+$border-style: solid;
+$border-width: 1px;
+$rounded-full: calc(infinity * 1px);
+
+$default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$default-transition-duration: 0.3s;
+
+html,
+body {
+  background-color: $color-white;
+  font-family: $font-text;
+  color: $color-black;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+main {
+  padding-inline: calc($spacing) * 4;
+  @media (min-width: $breakpoint-md) {
+    padding-inline: calc($spacing) * 8;
+  }
+
+  .container {
+    padding-top: calc($spacing) * 8;
+    padding-bottom: calc($spacing) * 8;
+  }
+}
+.container {
+  margin-inline: auto;
+  max-width: $container-6xl;
+}
+
+#hero,
+#header {
+  border-bottom: $border-width $border-style rgba(0, 0, 0, 0.5);
+  background: $color-crimson;
+  color: $color-white;
+  padding-inline: calc($spacing) * 4;
+  padding-top: calc($spacing) * 16;
+  padding-bottom: calc($spacing) * 8;
+  @media (min-width: $breakpoint-md) {
+    padding-inline: calc($spacing) * 8;
+  }
+
+  h1 {
+    max-width: $container-5xl;
+    font-size: $text-3xl;
+    line-height: $leading, $text-3xl--line-height;
+    line-height: $leading-tight;
+    font-weight: $font-weight-semibold;
+    text-wrap: balance;
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-3xl;
+      line-height: $leading, $text-3xl--line-height;
+    }
+  }
+
+  p {
+    text-wrap: balance;
+    max-width: $container-xl;
+    font-size: $text-lg;
+    line-height: $leading, $text-lg--line-height;
+    font-weight: $font-weight-medium;
+  }
+
+  small {
+    display: block;
+    margin-top: calc($spacing) * 2;
+    font-size: $text-sm;
+    line-height: $leading, $text-sm--line-height;
+    font-weight: $font-weight-normal;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: calc($spacing) * 4;
+    font-weight: $font-weight-medium;
+    color: $color-crimson;
+    background-color: $color-white;
+    padding-inline: calc($spacing) * 4;
+    padding-block: calc($spacing) * 2;
+    border-radius: $rounded-full;
+    text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgba($color-white, 0.8);
+      }
+    }
+  }
+}
+
+.hero-pill {
+  display: inline-block;
+  border-radius: calc(infinity * 1px);
+  padding-inline: calc($spacing) * 3;
+  padding-block: calc($spacing) * 1;
+  font-size: $text-sm;
+  line-height: $leading, $text-sm--line-height;
+  font-weight: $font-weight-medium;
+  color: $color-white;
+  background-color: $color-crimson;
+  border: 1px solid rgba($color-white, 0.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+  font-weight: $font-weight-semibold;
+}
+
+hr {
+  border: none;
+  border-top: $border-width $border-style rgba($color-grey, 0.25);
+  margin-top: calc($spacing) * 8;
+  margin-bottom: calc($spacing) * 8;
+}
+
+h2 {
+  font-size: $text-2xl;
+  line-height: $leading, $text-2xl--line-height;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .schedule-item {
+    border-bottom: $border-width $border-style rgba($color-grey, 0.1);
+    padding-top: calc($spacing) * 6;
+    padding-bottom: calc($spacing) * 6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-item-header {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: calc($spacing) * 2;
+      justify-content: flex-start;
+      align-items: flex-start;
+      @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .schedule-pill {
+      font-size: $text-sm;
+      line-height: $leading, $text-sm--line-height;
+      font-weight: $font-weight-medium;
+      padding-inline: calc($spacing) * 2;
+      padding-top: calc($spacing) * 1;
+      padding-bottom: calc($spacing) * 1;
+      border: 1px solid rgba($color-grey, 0.25);
+      background-color: $color-white;
+      border-radius: $rounded-full;
+      display: inline-block;
+      margin-bottom: calc($spacing) * 2;
+      color: $color-black;
+    }
+    .schedule-title {
+      margin: 0;
+      margin-top: calc($spacing) * 2;
+      font-size: $text-xl;
+      max-width: $container-3xl;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-family: $font-text;
+      font-weight: $font-weight-semibold;
+      font-size: $text-sm;
+      margin-top: calc($spacing) * 6;
+      margin-bottom: calc($spacing) * 2;
+      letter-spacing: 0.05em;
+    }
+
+    .schedule-readings {
+      // list-style: none;
+      padding-inline-start: calc($spacing) * 4;
+      list-style-position: outside;
+      margin: 0;
+      margin-top: calc($spacing) * 4;
+
+      li {
+        margin-bottom: calc($spacing) * 2;
+        max-width: $container-2xl;
+        line-height: $leading, $text-lg--line-height;
+        .reading-no-link {
+          font-size: $text-sm;
+          line-height: $leading, $text-sm--line-height;
+          color: $color-grey;
+        }
+
+        a {
+          text-decoration: underline;
+          color: $color-crimson;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .schedule-note {
+      font-weight: $font-weight-medium;
+      font-size: $text-sm;
+      margin-top: calc($spacing) * 4;
+      margin-bottom: calc($spacing) * 4;
+      line-height: $leading, $text-sm--line-height;
+    }
+  }
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: calc($spacing) * 4;
+
+    a {
+      font-size: $text-lg;
+      line-height: $leading, $text-lg--line-height;
+      font-weight: $font-weight-medium;
+      color: $color-crimson;
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  border-top: $border-width $border-style rgba(0, 0, 0, 0.1);
+  padding-top: calc($spacing) * 4;
+  padding-bottom: calc($spacing) * 4;
+  text-align: center;
+  font-size: $text-sm;
+  line-height: $leading, $text-sm--line-height;
+  color: $color-grey;
+
+  a {
+    color: $color-crimson;
+    text-decoration: underline;
+  }
+}
+
+.highlight {
+  background: rgba($color-yellow, 0.2);
+  border-left: 4px solid $color-warm-yellow;
+  padding-inline: calc($spacing) * 4;
+  .schedule-readings li a {
+    color: $color-black !important;
+  }
+}

@@ -1,0 +1,16 @@
+{% assign terms = site.data.schedule | sort_natural: "first" %} {% assign
+latest_term = terms | last | first %}
+
+<header id="hero">
+  <div class="container">
+    <div class="hero-pill">
+      {{latest_term[0] | replace: '-', ' ' | capitalize}}
+    </div>
+    <h1>{{site.title}}</h1>
+    <p>{{site.description}}</p>
+    {% if site.meeting.day and site.meeting.time %}
+    <small>Meets {{site.meeting.day}}s at {{site.meeting.time}}</small>
+    {% endif %}
+    <a id="jump" href="">Jump to this week's reading</a>
+  </div>
+</header>

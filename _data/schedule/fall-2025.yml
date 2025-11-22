@@ -1,0 +1,72 @@
+- date: 2025-09-10
+  title: Introduction and Planning
+
+- date: 2025-09-17
+  person: Tejaswi
+  title: Developing research processes in HCI
+  readings:
+    - title: Research Vision Activity
+      url: https://docs.google.com/presentation/d/1euI7hqN7Q2TUMg7spfY3sWLahqXLe8EFySUX_taP_O0/edit?usp=sharing
+
+- date: 2025-09-24
+  person: Helena
+  title: Lightning round?
+
+- date: 2025-10-01
+  person: Usha
+  title: Visioning
+
+- date: 2025-10-08
+  person: Helena
+  title: Creating General User Models from Computer Use
+  readings:
+    - title: "GUMs: Generative User Models for Human-Centered AI"
+      url: https://arxiv.org/abs/2505.10831
+    - title: Pre-print on Slack
+
+- date: 2025-10-15
+  person: Jianna
+  title: AI Overlords
+  readings:
+    - title: "AI Overlords: How we Anthropomorphize the Incorporeal"
+  note: From Humanish
+
+- date: 2025-10-22
+  person: Sejal
+  title: how we learn
+
+- date: 2025-10-29
+  person: Hongjin
+  title: voice of nature / social cognitive theory
+  readings:
+    - title: '"Near Data" and "Far Data" for Urban Sustainability: How Do Community Advocates Envision Data Intermediaries?'
+      url: https://arxiv.org/abs/2501.07661
+
+- date: 2025-11-05
+  person: Ritesh
+  title: designing legal, political, and ethical interfaces
+  readings:
+    - title: "Chapter 3: Legal and political interfaces"
+    - title: "Chapter 4: Ethical interfaces"
+  note: 'From "Design and Digital Interfaces: Designing with Aesthetic and Ethical Awareness" by Fass et al. '
+
+- date: 2025-11-12
+  person: Olivia
+  title: Creative applications of technology
+
+- date: 2025-11-19
+  person: Lena
+  title: how AI is changing HCI research
+  readings:
+    - title: "I'm Categorizing LLM as a Productivity Tool: Examining Ethics of LLM Use in HCI Research Practices"
+      url: https://dl.acm.org/doi/abs/10.1145/3711000
+    - title: "Unequal Scientific Recognition in the Age of LLMs"
+      url: https://aclanthology.org/anthology-files/anthology-files/pdf/findings/2025.findings-emnlp.1279.pdf
+
+- date: 2025-11-26
+  title: 🦃 Thanksgiving
+  note: Happy Thanksgiving! No meeting this week.
+
+- date: 2025-12-03
+  person: Alex (might be traveling)
+  title: TBD

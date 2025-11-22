@@ -1,0 +1,26 @@
+- date: 2024-10-22
+  person: Hannah
+  title: >
+    "ChatGPT, Don't Tell Me What to Do": Designing AI for Context Analysis in Humanitarian Frontline Negotiations
+  readings:
+    - title: >
+        "ChatGPT, Don't Tell Me What to Do": Designing AI for Context Analysis in Humanitarian Frontline Negotiations
+      url: https://arxiv.org/abs/2410.09139
+- date: 2024-10-15
+  person: Zilin
+  title: "Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?"
+  readings:
+    - title: "Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?"
+      url: https://arxiv.org/abs/1812.05239
+- date: 2024-10-08
+  person: Katy
+  title: "Language Models as Critical Thinking Tools: A Case Study of Philosophers"
+  readings:
+    - title: "Language Models as Critical Thinking Tools: A Case Study of Philosophers"
+      url: http://arxiv.org/abs/2404.04516
+- date: 2024-10-01
+  person: Krzysztof
+  title: "Scideator: Human-LLM Scientific Idea Generation Grounded in Research-Paper Facet Recombination"
+  readings:
+    - title: "Scideator: Human-LLM Scientific Idea Generation Grounded in Research-Paper Facet Recombination"
+      url: https://arxiv.org/abs/2409.14634

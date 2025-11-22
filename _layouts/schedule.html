@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+{%- include header.html -%}
+
+<main>
+  <div class="container">
+    <ul class="schedule">
+      {% assign sessions = page.sessions | sort: "date" %} {% for item in
+      sessions %} {% include schedule_item.html item=item %} {% endfor %}
+    </ul>
+    <hr />
+    <h2>All Terms</h2>
+    {% include all_terms.html %}
+  </div>
+</main>
