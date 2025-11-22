@@ -1,4 +1,5 @@
 ---
+layout: base
 ---
 
 # Future home of the Harvard HCI Reading Group

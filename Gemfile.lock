@@ -155,7 +155,8 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  jekyll (~> 4.2)
+  jekyll
+  kramdown-parser-gfm
 
 BUNDLED WITH
    2.7.2
