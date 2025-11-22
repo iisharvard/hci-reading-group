@@ -6,6 +6,9 @@ $color-grey: #52525c;
 $color-crimson: #a51c30;
 $color-red: #ed1b34;
 
+$color-yellow: #ffde2d;
+$color-warm-yellow: #fcb315;
+
 // Fonts
 
 $font-text: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -68,6 +71,7 @@ $rounded-full: calc(infinity * 1px);
 $default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $default-transition-duration: 0.3s;
 
+html,
 body {
   background-color: $color-white;
   font-family: $font-text;
@@ -143,6 +147,12 @@ main {
     padding-block: calc($spacing) * 2;
     border-radius: $rounded-full;
     text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgba($color-white, 0.8);
+      }
+    }
   }
 }
 
@@ -191,8 +201,8 @@ h2 {
     padding-top: calc($spacing) * 6;
     padding-bottom: calc($spacing) * 6;
 
-    &:first-child {
-      padding-top: 0;
+    &:last-child {
+      border-bottom: none;
     }
 
     .schedule-item-header {
@@ -307,5 +317,14 @@ footer {
   a {
     color: $color-crimson;
     text-decoration: underline;
+  }
+}
+
+.highlight {
+  background: rgba($color-yellow, 0.2);
+  border-left: 4px solid $color-warm-yellow;
+  padding-inline: calc($spacing) * 4;
+  .schedule-readings li a {
+    color: $color-black !important;
   }
 }

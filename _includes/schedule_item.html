@@ -1,4 +1,10 @@
-<li class="schedule-item">
+<li
+  id="schedule-item-{{ forloop.index0 }}"
+  class="schedule-item"
+  data-date="{{ item.date }}"
+  data-person="{{ item.person | escape }}"
+  data-title="{{ item.title | escape }}"
+>
   <div class="schedule-item-header">
     <h3 class="schedule-title">{{item.title}}</h3>
     <div>
@@ -7,7 +13,7 @@
       <small class="schedule-pill">{{item.date | date: "%B %d, %Y"}}</small>
     </div>
   </div>
-  {% if item.note %}
+  {% if item.note and item.readings.size > 0 %}
   <p class="schedule-note">{{ item.note }}</p>
   {% endif %} {% if item.readings and item.readings.size > 0 %}
   <h4>Readings</h4>
@@ -26,7 +32,9 @@
     </li>
     {% endfor %}
   </ul>
+  {% elsif item.note %}
+  <p>{{ item.note }}</p>
   {% else %}
-  <p>No readings assigned.</p>
+  <p>No readings.</p>
   {% endif %}
 </li>
