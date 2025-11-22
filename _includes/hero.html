@@ -1,16 +1,33 @@
-{% assign terms = site.data.schedule | sort_natural: "first" %} {% assign
-latest_term = terms | last | first %}
+{% comment %} Determine the latest term (e.g., fall-2025) {% endcomment %} {%
+assign term_keys = "" | split: "" %} {% for t in site.data.schedule %} {% assign
+term_keys = term_keys | push: t[0] %} {% endfor %} {% assign years = "" | split:
+"" %} {% for t in term_keys %} {% assign y = t | split: "-" | last %} {% assign
+years = years | push: y %} {% endfor %} {% assign years = years | uniq | sort |
+reverse %} {% assign season_order = "fall,winter,spring,summer" | split: "," %}
+{% assign latest_term = nil %} {% for y in years %} {% for s in season_order %}
+{% for t in term_keys %} {% assign season = t | split: "-" | first %} {% assign
+year = t | split: "-" | last %} {% if year == y and season == s %} {% assign
+latest_term = t %} {% break %} {% endif %} {% endfor %} {% if latest_term %}{%
+break %}{% endif %} {% endfor %} {% if latest_term %}{% break %}{% endif %} {%
+endfor %}
 
 <header id="hero">
   <div class="container">
+    {% if latest_term %}
     <div class="hero-pill">
-      {{latest_term[0] | replace: '-', ' ' | capitalize}}
+      {{ latest_term | replace: '-', ' ' | capitalize }}
     </div>
-    <h1>{{site.title}}</h1>
-    <p>{{site.description}}</p>
-    {% if site.meeting.day and site.meeting.time %}
-    <small>Meets {{site.meeting.day}}s at {{site.meeting.time}}</small>
+    {% else %}
+    <div class="hero-pill">Schedule</div>
     {% endif %}
+
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+
+    {% if site.meeting.day and site.meeting.time %}
+    <small>Meets {{ site.meeting.day }}s at {{ site.meeting.time }}</small>
+    {% endif %}
+
     <a id="jump" href="">Jump to this week's reading</a>
   </div>
 </header>
