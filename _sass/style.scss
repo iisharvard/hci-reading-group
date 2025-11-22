@@ -21,6 +21,8 @@ $text-sm: 0.875rem;
 $text-sm--line-height: calc(1.25 / 0.875);
 $text-lg: 1.125rem;
 $text-lg--line-height: calc(1.75 / 1.125);
+$text-xl: 1.25rem;
+$text-xl--line-height: calc(1.75 / 1.25);
 $text-2xl: 1.5rem;
 $text-2xl--line-height: calc(2 / 1.5);
 $text-3xl: 1.875rem;
@@ -80,6 +82,11 @@ main {
   @media (min-width: $breakpoint-md) {
     padding-inline: calc($spacing) * 8;
   }
+
+  .container {
+    padding-top: calc($spacing) * 8;
+    padding-bottom: calc($spacing) * 8;
+  }
 }
 .container {
   margin-inline: auto;
@@ -137,4 +144,109 @@ main {
   font-weight: $font-weight-medium;
   color: $color-crimson;
   background-color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+  font-weight: $font-weight-semibold;
+}
+
+hr {
+  border: none;
+  border-top: $border-width $border-style rgba($color-grey, 0.5);
+  margin-top: calc($spacing) * 8;
+  margin-bottom: calc($spacing) * 8;
+}
+
+h2 {
+  font-size: $text-2xl;
+  line-height: $leading, $text-2xl--line-height;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .schedule-item {
+    border-bottom: $border-width $border-style rgba($color-grey, 0.5);
+    padding-top: calc($spacing) * 6;
+    padding-bottom: calc($spacing) * 6;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    .schedule-item-header {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: calc($spacing) * 2;
+      justify-content: flex-start;
+      align-items: flex-start;
+      @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .schedule-pill {
+      font-size: $text-sm;
+      line-height: $leading, $text-sm--line-height;
+      font-weight: $font-weight-medium;
+      padding-inline: calc($spacing) * 2;
+      padding-top: calc($spacing) * 1;
+      padding-bottom: calc($spacing) * 1;
+      border: 1px solid rgba($color-grey, 0.5);
+      background-color: $color-white;
+      border-radius: $rounded-full;
+      display: inline-block;
+      margin-bottom: calc($spacing) * 2;
+      color: $color-black;
+    }
+    .schedule-title {
+      margin: 0;
+      margin-top: calc($spacing) * 2;
+      font-size: $text-xl;
+    }
+    .schedule-readings {
+      // list-style: none;
+      padding: 0;
+      list-style-position: inside;
+      margin: 0;
+      margin-top: calc($spacing) * 4;
+
+      li {
+        margin-bottom: calc($spacing) * 2;
+
+        .reading-no-link {
+          font-size: $text-sm;
+          line-height: $leading, $text-sm--line-height;
+          color: $color-grey;
+        }
+
+        a {
+          text-decoration: underline;
+          color: $color-crimson;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .schedule-note {
+      font-weight: $font-weight-medium;
+      font-size: $text-sm;
+      margin-top: calc($spacing) * 4;
+      margin-bottom: calc($spacing) * 4;
+      line-height: $leading, $text-sm--line-height;
+    }
+  }
 }
