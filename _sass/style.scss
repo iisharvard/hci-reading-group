@@ -1,7 +1,7 @@
 // Colors
 $color-black: #000;
 $color-white: #fff;
-$color-grey: #93a1ad;
+$color-grey: #71717b;
 
 $color-crimson: #a51c30;
 $color-red: #ed1b34;
@@ -93,7 +93,8 @@ main {
   max-width: $container-6xl;
 }
 
-#hero {
+#hero,
+#header {
   border-bottom: $border-width $border-style rgba(0, 0, 0, 0.5);
   background: $color-crimson;
   color: $color-white;
@@ -132,6 +133,18 @@ main {
     line-height: $leading, $text-sm--line-height;
     font-weight: $font-weight-normal;
   }
+
+  a {
+    display: inline-block;
+    margin-top: calc($spacing) * 4;
+    font-weight: $font-weight-medium;
+    color: $color-crimson;
+    background-color: $color-white;
+    padding-inline: calc($spacing) * 4;
+    padding-block: calc($spacing) * 2;
+    border-radius: $rounded-full;
+    text-decoration: none;
+  }
 }
 
 .hero-pill {
@@ -142,8 +155,9 @@ main {
   font-size: $text-sm;
   line-height: $leading, $text-sm--line-height;
   font-weight: $font-weight-medium;
-  color: $color-crimson;
-  background-color: $color-white;
+  color: $color-white;
+  background-color: $color-crimson;
+  border: 1px solid rgba($color-white, 0.5);
 }
 
 h1,
@@ -213,17 +227,19 @@ h2 {
       margin: 0;
       margin-top: calc($spacing) * 2;
       font-size: $text-xl;
+      max-width: $container-3xl;
     }
     .schedule-readings {
       // list-style: none;
-      padding: 0;
-      list-style-position: inside;
+      padding-inline-start: calc($spacing) * 4;
+      list-style-position: outside;
       margin: 0;
       margin-top: calc($spacing) * 4;
 
       li {
         margin-bottom: calc($spacing) * 2;
-
+        max-width: $container-2xl;
+        line-height: $leading, $text-lg--line-height;
         .reading-no-link {
           font-size: $text-sm;
           line-height: $leading, $text-sm--line-height;
