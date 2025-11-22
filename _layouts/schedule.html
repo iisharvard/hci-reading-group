@@ -1,0 +1,26 @@
+---
+layout: base
+---
+
+{%- include header.html -%}
+
+<main>
+  <div class="container">
+    {% assign sessions = page.sessions | sort: "date" %} {% for item in sessions
+    %}
+    <h3>{{ item.date }}{% if item.person %}: {{ item.person }}{% endif %}</h3>
+    {% if item.title %}
+    <p><strong>{{ item.title }}</strong></p>
+    {% endif %} {% if item.readings and item.readings.size > 0 %}
+    <ul>
+      {% for r in item.readings %}
+      <li><a href="{{ r.url }}">{{ r.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% if item.note %}
+    <small>{{ item.note }}</small>
+    {% endif %} {% endif %} {% endfor %}
+  </div>
+</main>
+
+<h1></h1>
