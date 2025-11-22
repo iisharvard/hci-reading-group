@@ -39,3 +39,7 @@ To add a new semester to the reading group schedule, follow these steps:
 2. Add weeks with dates, titles, readings, presenters, and notes as needed.
 3. Update the `site.meeting` variable in `_config.yml` to reflect the new semester's meeting time.
 4. Commit and redeploy the site.
+
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
