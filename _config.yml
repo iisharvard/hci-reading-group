@@ -3,4 +3,10 @@
 title: Harvard HCI Reading Group
 description: The weekly reading group for the Harvard HCI group and friends.
 
+semester: Winter 2026
+
+meeting:
+  day: Wednesday
+  time: 10am
+
 permalink: pretty
