@@ -6,6 +6,7 @@ layout: base
 
 <main>
   <div class="container">
+    <h2 id="schedule">Schedule</h2>
     <ul class="schedule">
       {% assign sessions = page.sessions | sort: "date" %} {% for item in
       sessions %} {% include schedule_item.html item=item %} {% endfor %}
