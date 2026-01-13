@@ -1,3 +1,9 @@
+---
+layout: page
+title: Archive
+description: A collection of past reading groups
+---
+
 {% comment %} Get all term keys (e.g. "fall-2025", "winter-2025") {% endcomment
 %} {% assign term_keys = "" | split: "" %} {% for t in site.data.schedule %} {%
 assign term_keys = term_keys | push: t[0] %} {% endfor %} {% comment %} Extract

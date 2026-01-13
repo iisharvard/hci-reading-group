@@ -3,18 +3,13 @@
 title: Harvard HCI Reading Group
 description: The weekly reading group for the Harvard HCI group and friends.
 
-baseurl: /hci-reading-group/
-url: https://iisharvard.github.io
-
-author:
-  name: Ritesh Kanchi
-  email: rkanchi@g.harvard.edu
-
-meeting:
-  day: Wednesday
-  time: 10am
+content:
+  footer: Harvard HCI
+  type: Wednesdays at 10am
 
 permalink: pretty
 
+remote_theme: ritesh-kanchi/axya@main
+
 plugins:
-  - jekyll-seo-tag
+  - jekyll-remote-theme

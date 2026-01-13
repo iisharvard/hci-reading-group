@@ -1,11 +1,32 @@
 <footer>
-  <p>
-    <a
-      href="https://github.com/iisharvard/hci-reading-group"
-      target="_blank"
-      rel="noopener noreferrer"
-      >View on GitHub</a
-    >
-    | This site was made by Ritesh in a hour or two. There may be bugs.
-  </p>
+  <div>
+    <p>
+      &copy; {{ site.content.footer }} {{ 'now' | date: '%Y' }}.
+      <a href="https://github.com/iisharvard/hci-reading-group" target="_blank"
+        >View on GitHub</a
+      >
+    </p>
+    <small>
+      This site uses
+      <a href="https://github.com/ritesh-kanchi/axya" target="_blank">Axya</a>,
+      a theme for Jekyll.
+    </small>
+  </div>
+  {% if site.content.logo %} {% if site.content.logo.url %}
+  <a href="{{ site.content.logo.url }}" target="_blank">
+    <div class="logo">
+      <img
+        src="{{ site.content.logo.img }}"
+        alt="{{ site.title | escape }} Logo"
+      />
+    </div>
+  </a>
+  {% else %}
+  <div class="logo">
+    <img
+      src="{{ site.content.logo.img }}"
+      alt="{{ site.title | escape }} Logo"
+    />
+  </div>
+  {% endif %} {% endif %}
 </footer>
