@@ -48,6 +48,8 @@
   readings:
     - title: "Chapter 3: Legal and political interfaces"
     - title: "Chapter 4: Ethical interfaces"
+    - title: "Slides"
+      url: "https://docs.google.com/presentation/d/1kZFHEQyxTQVrruDnQ9eg0uRTesoujnh5Hb9IhSkCzY4/edit?usp=sharing"
   note: 'From "Design and Digital Interfaces: Designing with Aesthetic and Ethical Awareness" by Fass et al. '
 
 - date: 2025-11-12
@@ -68,5 +70,5 @@
   note: Happy Thanksgiving! No meeting this week.
 
 - date: 2025-12-03
-  person: Alex (might be traveling)
-  title: TBD
+  title: No reading group
+  note: No meeting this week.

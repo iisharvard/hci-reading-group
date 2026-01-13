@@ -4,6 +4,8 @@ Welcome to the Harvard HCI Reading Group! This repository contains our weekly re
 
 This repository is set up as a website using Jekyll and GitHub Pages. You can browse the papers and find information about our reading schedule here.
 
+> Expect continuous updates over time! Feel free to contribute as well.
+
 ## Adding new papers
 
 To add a new paper to the reading group, follow these steps:

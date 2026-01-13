@@ -2,5 +2,6 @@
 layout: page
 hide: true
 ---
+
 {% assign sessions = page.sessions | sort: 'date' %}
 {% include schedule-table.html sessions=sessions %}
