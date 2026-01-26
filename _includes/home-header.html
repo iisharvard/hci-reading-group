@@ -3,9 +3,9 @@ assign term_keys = '' | split: '' %} {% for t in site.data.schedule %} {% assign
 term_keys = term_keys | push: t[0] %} {% endfor %} {% assign years = '' | split:
 '' %} {% for t in term_keys %} {% assign y = t | split: '-' | last %} {% assign
 years = years | push: y %} {% endfor %} {% assign years = years | uniq | sort |
-reverse %} {% assign season_order = 'fall,winter,spring,summer' | split: ',' %}
-{% assign latest_term = null %} {% for y in years %} {% for s in season_order %}
-{% for t in term_keys %} {% assign season = t | split: '-' | first %} {% assign
+reverse %} {% assign season_order = 'fall,spring,summer' | split: ',' %} {%
+assign latest_term = null %} {% for y in years %} {% for s in season_order %} {%
+for t in term_keys %} {% assign season = t | split: '-' | first %} {% assign
 year = t | split: '-' | last %} {% if year == y and season == s %} {% assign
 latest_term = t %} {% break %} {% endif %} {% endfor %} {% if latest_term -%}
 {%- break -%} {%- endif %} {% endfor %} {% if latest_term %}{% break %}{% endif

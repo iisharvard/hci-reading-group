@@ -17,7 +17,7 @@ layout: home
 {% comment %}
   Define season order (you can adjust the order of preference)
 {% endcomment %}
-{% assign season_order = 'fall,winter,spring,summer' | split: ',' %}
+{% assign season_order = 'fall,spring,summer' | split: ',' %}
 {% comment %}
   Find the most recent (latest) term
 {% endcomment %}

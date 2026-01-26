@@ -1,4 +1,5 @@
-const jump = document.getElementById("jump");
+const jump = document.getElementsByClassName("header-button-group")[0]
+  .children[0].children[0];
 
 document.addEventListener("DOMContentLoaded", () => {
   const today = new Date();
