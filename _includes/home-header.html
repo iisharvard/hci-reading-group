@@ -1,0 +1,37 @@
+{% comment %} Determine the latest term (e.g., fall-2025) {% endcomment %} {%
+assign term_keys = '' | split: '' %} {% for t in site.data.schedule %} {% assign
+term_keys = term_keys | push: t[0] %} {% endfor %} {% assign years = '' | split:
+'' %} {% for t in term_keys %} {% assign y = t | split: '-' | last %} {% assign
+years = years | push: y %} {% endfor %} {% assign years = years | uniq | sort |
+reverse %} {% assign season_order = 'fall,spring,summer' | split: ',' %} {%
+assign latest_term = null %} {% for y in years %} {% for s in season_order %} {%
+for t in term_keys %} {% assign season = t | split: '-' | first %} {% assign
+year = t | split: '-' | last %} {% if year == y and season == s %} {% assign
+latest_term = t %} {% break %} {% endif %} {% endfor %} {% if latest_term -%}
+{%- break -%} {%- endif %} {% endfor %} {% if latest_term %}{% break %}{% endif
+%} {% endfor %}
+
+<header id="home-header">
+  <ul class="header-pill-group">
+    <li class="header-pill">
+      {{ latest_term | replace: '-', ' ' | capitalize }}
+    </li>
+    {% if site.content.type %}
+    <li class="header-pill">{{ site.content.type }}</li>
+    {% endif %}
+  </ul>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+  <ul class="header-button-group">
+    <li>
+      <a
+        href=""
+        style="display: inline-block; margin-top: 10px"
+        id="jump"
+        class="header-button"
+        >Jump to this week's reading</a
+      >
+    </li>
+  </ul>
+</header>
+<hr />

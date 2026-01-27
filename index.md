@@ -1,62 +1,52 @@
 ---
 layout: home
 ---
-
-## Schedule
-
-<ul class="schedule">
 {% comment %}
-Collect all term keys, extract years, and sort descending
+  Collect all term keys, extract years, and sort descending
 {% endcomment %}
-{% assign term_keys = "" | split: "" %}
+{% assign term_keys = '' | split: '' %}
 {% for t in site.data.schedule %}
   {% assign term_keys = term_keys | push: t[0] %}
 {% endfor %}
-
-{% assign years = "" | split: "" %}
+{% assign years = '' | split: '' %}
 {% for t in term_keys %}
-{% assign y = t | split: "-" | last %}
-{% assign years = years | push: y %}
+  {% assign y = t | split: '-' | last %}
+  {% assign years = years | push: y %}
 {% endfor %}
 {% assign years = years | uniq | sort | reverse %}
-
 {% comment %}
-Define season order (you can adjust the order of preference)
+  Define season order (you can adjust the order of preference)
 {% endcomment %}
-{% assign season_order = "fall,winter,spring,summer" | split: "," %}
-
+{% assign season_order = 'fall,spring,summer' | split: ',' %}
 {% comment %}
-Find the most recent (latest) term
+  Find the most recent (latest) term
 {% endcomment %}
-{% assign latest_term = nil %}
+{% assign latest_term = null %}
 {% for y in years %}
-{% for s in season_order %}
-{% for t in term_keys %}
-{% assign season = t | split: "-" | first %}
-{% assign year = t | split: "-" | last %}
-{% if year == y and season == s %}
-{% assign latest_term = t %}
-{% break %}
-{% endif %}
-{% endfor %}
-{% if latest_term %}{% break %}{% endif %}
-{% endfor %}
-{% if latest_term %}{% break %}{% endif %}
+  {% for s in season_order %}
+    {% for t in term_keys %}
+      {% assign season = t | split: '-' | first %}
+      {% assign year = t | split: '-' | last %}
+      {% if year == y and season == s %}
+        {% assign latest_term = t %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if latest_term %}{% break %}{% endif %}
+  {% endfor %}
+  {% if latest_term %}{% break %}{% endif %}
 {% endfor %}
 
-{% if latest_term %}
-{% assign sessions = site.data.schedule[latest_term] %}
-{% for item in sessions %}
-{% include schedule_item.html item=item %}
-{% endfor %}
-{% else %}
+## About
 
-  <li>No schedule found.</li>
-{% endif %}
-</ul>
+This site provides the current schedule for the Harvard HCI Reading Group, as well as an archive of past reading groups
+over the years.
 
 ---
 
-## Past Terms
-
-{% include all_terms.html %}
+{% if latest_term %}
+  {% assign sessions = site.data.schedule[latest_term] %}
+  {% include schedule-table.html sessions=sessions %}
+{% else %}
+  <p>No schedule found.</p>
+{% endif %}
