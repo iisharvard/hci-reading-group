@@ -6,4 +6,35 @@
 :root {
   --color-primary: #a51c30 !important;
   --color-primary-hover: #791523 !important;
+  --color-highlight: rgba(165, 28, 48, 0.5);
+}
+
+.schedule-row {
+  .row-title {
+    font-weight: 600;
+    color: var(--color-headings);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .row-subtitle {
+    white-space: nowrap;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .row-details {
+    h3 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: var(--color-text);
+      margin: 0;
+    }
+  }
+
+  &.upcoming {
+    background-color: var(--color-background-hover);
+  }
 }

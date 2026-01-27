@@ -3,15 +3,14 @@ const jump = document.getElementsByClassName("header-button-group")[0]
 
 document.addEventListener("DOMContentLoaded", () => {
   const today = new Date();
-  const items = [...document.querySelectorAll(".schedule-item")];
+  const items = [...document.querySelectorAll(".schedule-row")];
   if (!items.length) return;
 
   // Parse ISO dates from data-date or visible text
   const sessions = items
     .map((el) => {
       const iso =
-        el.dataset.date ||
-        el.querySelector(".schedule-pill:last-child")?.textContent;
+        el.dataset.date || el.querySelector(".row-subtitle")?.textContent;
       const date = new Date(iso);
       return { el, date };
     })
@@ -35,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (upcoming) {
-    upcoming.el.classList.add("highlight");
+    upcoming.el.classList.add("upcoming");
     jump.href = `#${upcoming.el.id}`;
-    jump.innerText = `This week: ${upcoming.el.dataset.title}`;
+    jump.innerText = `This week: ${upcoming.el.querySelector(".row-title h4").innerText}`;
   }
 
   if (!upcoming) return;
