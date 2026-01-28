@@ -7,9 +7,9 @@ content:
   footer: Harvard HCI
   type: Fridays at 2pm
   logo:
+    alt: Harvard Human-Computer Interaction Logo
     img: https://iis.seas.harvard.edu/wp-content/uploads/2024/12/Harvard-HCI-Logo.png
     url: https://hci.seas.harvard.edu
-    alt: Harvard Human-Computer Interaction Logo
 
 permalink: pretty
 
