@@ -92,7 +92,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (upcoming) {
     upcoming.el.classList.add("upcoming");
-    jump.href = `#${upcoming.el.id}`;
+    const id = `session-${upcoming.date.toISOString().split("T")[0]}`;
+    upcoming.el.id = id;
+    jump.href = `#${id}`;
     jump.innerText = `This week: ${upcoming.el.querySelector(".row-title h4").innerText}`;
   }
 
