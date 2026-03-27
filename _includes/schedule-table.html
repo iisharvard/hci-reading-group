@@ -1,9 +1,9 @@
 <div class="schedule-wrapper">
   <table class="schedule">
     <colgroup>
-      <col style="width: 10%" />
-      <col style="width: 30%" />
-      <col style="width: 40%" />
+      <col style="width: 10%">
+      <col style="width: 30%">
+      <col style="width: 40%">
     </colgroup>
     <thead>
       <tr>
@@ -14,13 +14,25 @@
     </thead>
     <tbody>
       {% for item in include.sessions %}
-      <tr class="schedule-row">
-        <td class="row-subtitle">{{ item.date | date: '%B %d, %Y' }}</td>
-        <td class="row-title">
-          <h4>{{ item.title }}</h4>
-        </td>
-        <td class="row-details">{% include details.html item=item %}</td>
-      </tr>
+        {% if item.skipped %}
+          <tr class="schedule-row skipped">
+            <td class="row-subtitle">{{ item.date | date: '%B %d, %Y' }}</td>
+            <td class="row-title">
+              <h4>Skipped week</h4>
+            </td>
+            <td />
+          </tr>
+        {% else %}
+          <tr class="schedule-row">
+            <td class="row-subtitle">{{ item.date | date: '%B %d, %Y' }}</td>
+            <td class="row-title">
+              <h4>
+                {{ item.title }}
+              </h4>
+            </td>
+            <td class="row-details">{% include details.html item=item %}</td>
+          </tr>
+        {% endif %}
       {% endfor %}
     </tbody>
   </table>
