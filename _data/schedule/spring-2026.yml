@@ -1,3 +1,6 @@
+- date: 2026-01-30
+  skipped: true
+
 - date: 2026-02-06
   person: Helena
   title: As We May Think
@@ -12,19 +15,8 @@
     - title: The Computer for the 21st Century. Mark Weiser. Scientific American. September 1991, pp. 94-104.
       url: https://www.jstor.org/stable/24938718
 
-# - date: 2026-02-13
-#   person: ???
-#   title: Tangible Bits
-#   readings:
-#     - title: "Tangible Bits: Towards Seamless Interfaces Between People, Bits and Atoms. Hiroshi Ishii, Brygg Ulmer. CHI 1997"
-#       url: ""
-
-# - date: 2026-02-20
-#   person: ???
-#   title: The Reflective Practitioner (Chapter 3)
-#   readings:
-#     - title: The Reflective Practitioner (Chapter 3). Donald Schön. 1983.
-#       url: "https://hcicourses.stanford.edu/cs347/2023/readings/reflectivepractitioner-ch3.pdf"
+- date: 2026-02-20
+  skipped: true
 
 - date: 2026-02-27
   title: Tangible Bits
@@ -32,6 +24,9 @@
   readings:
     - title: "Tangible Bits: Towards Seamless Interfaces Between People, Bits and Atoms. Hiroshi Ishii, Brygg Ulmer. CHI 1997"
       url: "https://dl.acm.org/doi/10.1145/258549.258715"
+
+- date: 2026-03-06
+  skipped: true
 
 - date: 2026-03-13
   title: Plans and Situated Actions
