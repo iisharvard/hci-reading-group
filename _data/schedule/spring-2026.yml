@@ -45,41 +45,18 @@
   readings:
     - title: Beyond Being There. Jim Hollan, Scott Stornetta. CHI 1992.
       url: "https://dl.acm.org/doi/10.1145/142750.142769"
-# - date: 2026-03-13
-#   person: ???
-#   title: Distance Matters
-#   readings:
-#     - title: Distance Matters. Gary Olson, Judith Olson. Human-Computer Interaction 2000.
-#       url: "https://doi.org/10.1207/S15327051HCI1523_4"
-
-# - date: 2026-03-20
-#   person: ???
-#   title: Direct Manipulation Vs. Interface Agents
-#   readings:
-#     - title: Direct Manipulation Vs. Interface Agents. Ben Shneiderman and Pattie Maes. Interactions 1997.
-#       url: "https://www.cs.umd.edu/users/ben/papers/Shn-Maes-v4n6-1997.pdf"
-
-# - date: 2026-03-27
-#   person: ???
-#   title: Things that Make Us Smart (Chapter 3)
-#   readings:
-#     - title: Things that Make Us Smart (Chapter 3). Don Norman. 1993.
-#       url: "https://magrawala.github.io/cs347-sp24/assets/docs/ThingsMakeUsSmartChapter3.pdf"
-
-# - date: 2026-04-03
-#   person: ???
-#   title: The Humane Interface (Chapter 4)
-#   readings:
-#     - title: The Humane Interface (Chapter 4). Jef Raskin. 2000.
-#       url: "https://magrawala.github.io/cs347-sp24/assets/docs/Raskin-Chap4.pdf"
-
-# - date: 2026-04-10
-#   person: ???
-#   title: The Sciences of the Artificial (Chapter 5)
-#   readings:
-#     - title: "The Sciences of the Artificial (Chapter 5—The Science of Design: Creating the Artificial). Herbert A. Simon. MIT Press 1970."
-#       url: "https://www.jstor.org/stable/1511391"
-
+- date: 2026-04-03
+  person: Haylin
+  title: Distance Matters
+  readings:
+    - title: Distance Matters. Gary M. Olson, Judith S. Olson. 2000.
+      url: "https://dl.acm.org/doi/10.1207/S15327051HCI1523_4"
+- date: 2026-04-10
+  person: ???
+  title: TBD
+- date: 2026-04-17
+  title: CHI 2026
+  note: Out in Barcelona! ☀️
 # - date: 2026-04-17
 #   person: ???
 #   title: Ways of Knowing in HCI
