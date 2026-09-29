@@ -30,8 +30,11 @@
   person: ???
   title: "TBD"
 - date: 2026-11-30
-  person: ???
-  title: "TBD"
+  person: Sejal
+  title: "Generative AI in Children's Creative Collaboration"
+  readings:
+    - title: "Generative AI in Children's Creative Collaboration: Impact, Perception, and Design Guidelines"
+      url: "https://dl.acm.org/doi/full/10.1145/3772318.3790907"
 - date: 2026-12-07
   person: ???
   title: "TBD"
